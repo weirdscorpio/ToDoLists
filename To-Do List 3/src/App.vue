@@ -28,11 +28,6 @@
 
 <script>
 export default {
-  mounted(){
-    this.$router.push("todo")
-      .catch(err =>{console.log(err)})
-
-  },
   methods: {
     logout() {
       this.$store

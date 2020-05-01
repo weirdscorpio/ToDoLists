@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="logged-out" v-if="this.$store.state.user.length==0">
+    <div class="logged-out" v-if="this.$store.state.logged">
       Welcome to To-Do List<br><br>
       Sign up or Login to Continue 
     </div>

@@ -63,7 +63,6 @@ export default {
     this.$store
       .dispatch("loadItems")
       .then(resp => {
-        console.log(resp);
         this.unsubscribe = resp;
       })
       .catch(err => {
