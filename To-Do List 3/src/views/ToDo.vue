@@ -38,7 +38,7 @@
 
         <template v-slot:modal-footer>
           <button class="my-buttton" @click="edit = false">Cancel</button>
-          <button class="my-buttton" @click="update()">Edit</button>
+          <button class="my-buttton" @click="update()">Save</button>
         </template>
       </b-modal>
     </div>
