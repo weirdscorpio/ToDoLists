@@ -95,6 +95,12 @@ export default new Vuex.Store({
         await db.collection("items").doc(id).delete();
         console.log(commit);
     },
+    async updateItem({commit},payload){
+      await db.collection("items").doc(payload.id).update({
+        todo : payload.todo
+      })
+      console.log(commit)
+    }
   },
   getters: {
     getList: (store) =>{
